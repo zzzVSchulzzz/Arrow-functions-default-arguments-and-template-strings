@@ -19,12 +19,12 @@ alert( sayHello('Евгений', 'Петров', 25, 'Здравствуйте,
 */
 
 const sayHello = (
-    name = 'Иван', 
+    name = 'Иван ', 
     surname = 'Иванов', 
-    age = '10', 
-    greeting = 'Привет',
-) => (`${greeting}, ${name} ${surname}, тебе ${age}`);
+    age = 10, 
+    greeting = 'Привет, ',
+) => (greeting + name + surname + ',' + ' тебе ' + age + ' лет');
 
 alert( sayHello() );
-alert( sayHello('Дима') );
-alert( sayHello('Евгений', 'Петров', 25, 'Здравствуй') );
+alert( sayHello('Дима ') );
+alert( sayHello('Евгений ', 'Петров', 25, 'Здравствуй, ') );
